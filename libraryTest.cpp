@@ -12,16 +12,19 @@
 using namespace mohan;
 
 int main(void) {
-    ShiftReg firstFR(PORTD, 4, 6, 5);
+    // Create an object
+    ShiftReg firstSR(PORTD, 4, 6, 5);
+    
+    // Then use it
     while(1) {
         for(int i = 0; i < 8; i++) {
             uint8_t data = 1 << i;
-            firstFR.shiftOut(LSBFIRST, data);
+            firstSR.shiftOut(LSBFIRST, data);
             _delay_ms(25);
         }
         for(int i = 6; i >= 1; i--) {
             uint8_t data = 1 << i;
-            firstFR.shiftOut(LSBFIRST, data);
+            firstSR.shiftOut(LSBFIRST, data);
             _delay_ms(25);
         }
     }
