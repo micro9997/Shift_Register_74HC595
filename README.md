@@ -7,11 +7,7 @@ Shift register (74HC595) library for ATMega328P with 16MHz crystal
 
 &nbsp;
 
-&nbsp;
-
 ### Test code
-
-&nbsp;
 
 ```c
 #define F_CPU 16000000
@@ -29,7 +25,7 @@ using namespace mohan;
 int main(void) {
     // Create an object
     ShiftReg firstSR(PORTD, 4, 6, 5);
-    
+
     // Then use it
     while(1) {
         for(int i = 0; i < 8; i++) {
