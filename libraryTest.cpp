@@ -9,9 +9,9 @@
 #include <util/delay.h>
 #include "src/shiftReg.hpp"
 
-#define dataPin 4
-#define clockPin 6
-#define latchPin 5
+#define dataPin     4
+#define clockPin    6
+#define latchPin    5
 
 using namespace mohan;
 
