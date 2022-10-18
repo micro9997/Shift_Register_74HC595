@@ -9,12 +9,16 @@
 #include <util/delay.h>
 #include "src/shiftReg.hpp"
 
+#define dataPin 4
+#define clockPin 6
+#define latchPin 5
+
 using namespace mohan;
 
 int main(void) {
     // Create an object
-    ShiftReg firstSR(PORTD, 4, 6, 5);
-    
+    ShiftReg firstSR(PORTD, dataPin, clockPin, latchPin);
+
     // Then use it
     while(1) {
         for(int i = 0; i < 8; i++) {
