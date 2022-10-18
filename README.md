@@ -1,11 +1,16 @@
 # Shift_Register_74HC595
-Shift register (74HC595) library for ATMega328P with 16MHz crystal
+Shift register (74HC595) library for ATMega328P with 16MHz crystal oscillator.
 
-*It's a C++ library for accessing the 74HC595 shift register easily. It's created using the OOP concept. So, create as many objects as you need and use them easily.*
+*It's a simple C++ library to access the 74HC595 shift register by Atmel ATMega328P. It's created using the Object-Oriented Programming concept. So, anyone can create as many objects as they need and use them easily.*
+
+*What is special here is that we can realize the features of C++ by understanding this. because it's a simple library.*
 
 ```c
 // Create an object
 ShiftReg firstSR(PORTD, dataPin, clockPin, latchPin);
+
+// Then access it easily
+firstSR.shiftOut(LSBFIRST, data);
 ```
 
 &nbsp;
