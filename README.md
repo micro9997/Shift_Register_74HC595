@@ -13,7 +13,7 @@ ShiftReg firstSR(PORTD, dataPin, clockPin, latchPin);
 firstSR.shiftOut(LSBFIRST, data);
 ```
 
-*'ShiftReg' is like a blueprint of the object. 'firstSR' is an object that is created by using that blueprint. So, we can create many objects by using this blueprint.*
+*`ShiftReg` is like a blueprint of the object. `firstSR` is an object that is created by using that blueprint. So, we can create many objects by using this blueprint.*
 
 &nbsp;
 
